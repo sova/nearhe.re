@@ -17,13 +17,13 @@ body {
 }
 
 #vproducts {
-  width: 700px;
+  width: 900px;
   height: 200px;
   border: 1px solid purple;
 }
 
 #vservices {
-  width: 700px;
+  width: 900px;
   height: 200px;
   border: 1px solid blue;
 }
