@@ -1,8 +1,8 @@
 (ns nearhe.re
-  (:gen-class)
+ ; (:gen-class)
   (:require [org.httpkit.server :as server]
             [compojure.core :refer :all]
-            [compojure.route :as route]))
+            [compojure.route :refer :all]))
 
 (defn show-landing-pg [req]
   {:status  200
@@ -17,9 +17,9 @@
 (defroutes app-routes
   (GET "/" [] show-landing-pg)
   (GET "/hi" [] general-handler)
-  (route/files "/static") ;; static file url prefix /static, in `public` folder
-  (route/files "/") ;; static file in `public` folder
-  (route/not-found "le 404"))
+  (resources "/")
+  (resources "/css/") ;; static file url prefix /static, in `public` folder
+  (not-found "le 404"))
 
 
 (defn -main

@@ -1,0 +1,29 @@
+
+
+body {
+  background-color: hsl(130, 30%, 70%, 90%);
+}
+
+#vcal {
+  background-color: #fff
+}
+
+.month-container {
+  float: left;
+}
+
+.months-container {
+  display: block;
+}
+
+#vproducts {
+  width: 700px;
+  height: 200px;
+  border: 1px solid purple;
+}
+
+#vservices {
+  width: 700px;
+  height: 200px;
+  border: 1px solid blue;
+}
