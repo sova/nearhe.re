@@ -104,11 +104,16 @@
         Leave your e-mail to be notified when nearhe.re is in an open beta near you.
         <br/><br/>
 
-        <label>email: <input placeholder="email@domain"/></label>
-        <label>country and state: <input placeholder="country and state or ZIP "/></label>
-        <button type="submit">
-          Notify me by e-mail
-        </button>
+        <form action="/notify-by-email-please" method="post">
+          <fieldset>
+
+
+          <input name="email" type="text"  placeholder="email">
+          <input name="zip"   type="text"  placeholder="zip, or country">
+          <input type="submit" value="Notify me by email">
+      </fieldset>
+      </form>
+
 
       </div>
         <div id="footer">

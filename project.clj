@@ -4,7 +4,9 @@
   :license {:description "All Rights Reserved."}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [http-kit "2.3.0"]
-                 [compojure "1.6.1"]]
+                 [compojure "1.6.1"]
+                 [ring/ring-defaults "0.3.2"]
+                 [duratom "0.3.3"]]
   :main ^:skip-aot nearhe.re
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
