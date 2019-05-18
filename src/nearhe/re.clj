@@ -9,14 +9,9 @@
    :headers {"Content-Type" "text/html"}
    :body    (slurp "resources/public/index.html")})
 
-(defn general-handler [req]
-  {:status  200
-   :headers {"Content-Type" "text/html"}
-   :body    "All hail General Zod!"})
-
 (defroutes app-routes
   (GET "/" [] show-landing-pg)
-  (GET "/hi" [] general-handler)
+
   (resources "/")
   (resources "/css/") ;; static file url prefix /static, in `public` folder
   (not-found "le 404"))
