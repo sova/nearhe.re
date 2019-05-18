@@ -3,8 +3,7 @@
 body {
   background-color: hsl(130, 30%, 70%, 90%);
 }
-@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Vollkorn&display=swap');
 * {
 font-family: 'Vollkorn', serif;
 }
@@ -15,13 +14,17 @@ font-family: 'Vollkorn', serif;
   background-color: #fff;
   float: left;
   clear: none;
+  font-variant: small-caps;
+  margin-right: 10px;
 }
 
 .nblink {
   padding-top: 6px;
-  height: 33%;
+  height: 51px;
     font-size: 26px;
   line-height: 20px;
+  border: 1px solid #eee;
+  margin-top: 6px;
 }
 
 .nblink:hover {
@@ -33,19 +36,34 @@ font-family: 'Vollkorn', serif;
   width: 800px;
   margin-left: -400px;
   left: 50%;
+  min-height: 100vh;
 
   border: 1px solid black;
+  background-color: #fff;
 }
 
 #topnav {
   float: right;
   clear: none;
-  height: 40px;
-  max-width: 598px;/*1000px-200px*/
-background-color: #fff;}
+  height: 45px;
+  max-width: 588px;/*1000px-200px*/
+
+ /* position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  max-width: 598px;
+  height: 45px;*/
+  padding-bottom: 45px;
+background-color: #fff;
+
+padding-top: 3px;
+padding-bottom: 2px;
+font-variant: small-caps;
+}
 
 
-#loginbtn {
+.topnavbtn {
   float: right;
   clear: none;
   font-size: 24px;
@@ -53,33 +71,47 @@ background-color: #fff;}
   border: 1px solid purple;
   padding-left: 10px;
   padding-right: 10px;
-  margin-right: 0;
+  margin-left: 10px;
 }
-#loginbtn:hover {
+
+
+.topnavbtn:hover {
   background-color: purple;
   color: #fff;
   border-color: #000;
 }
-#vcal {
-  background-color: #fff
+
+.desc {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+  marign-rigt: 20px;
 }
 
-.month-container {
-  float: left;
+.marketlinkbox {
+
+  height: 130px;
+  border: 2px solid purple;
+  font-size: 42px;
+  padding-left: .25em;
 }
 
-.months-container {
-  display: block;
+.marketlinkbox:hover {
+  background-color: gold;}
+
+
+.l {float:left;width:240px;}
+.r {float:right;width:240px;}
+.c {margin:0 auto;width:240px;}
+
+#content_wrap {
+  padding-bottom: 7.5em; /* footer drawer height */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* footer height */
+  color: #777;
 }
 
-#vproducts {
-  width: 900px;
-  height: 200px;
-  border: 1px solid purple;
-}
-
-#vservices {
-  width: 900px;
-  height: 200px;
-  border: 1px solid blue;
-}
