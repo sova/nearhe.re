@@ -1,7 +1,7 @@
 
 
 body {
-  background-color: hsl(130, 30%, 70%, 90%);
+  background-color: hsl(196,50%,70%);
 }
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Vollkorn&display=swap');
 * {
@@ -10,7 +10,7 @@ font-family: 'Vollkorn', serif;
 #navbox {
   width: 200px;
   height: 200px;
-  border: 10px solid purple;
+  border: 10px solid hsl(196,50%,30%);
   background-color: #fff;
   float: left;
   clear: none;
@@ -29,6 +29,10 @@ font-family: 'Vollkorn', serif;
 
 .nblink:hover {
   background-color: gold;
+}
+
+.topnavbtn > a:link {
+
 }
 
 #bigbox {
@@ -68,7 +72,7 @@ font-variant: small-caps;
   clear: none;
   font-size: 24px;
   background-color: #fff;
-  border: 1px solid purple;
+  border: 1px solid hsl(196,50%,30%);
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
@@ -76,9 +80,21 @@ font-variant: small-caps;
 
 
 .topnavbtn:hover {
-  background-color: purple;
+  background-color: hsl(196,50%,30%);
   color: #fff;
   border-color: #000;
+}
+
+a:link {
+  color: hsl(206,50%,50%);
+}
+
+a:visited {
+  color: hsl(206,90%,50%);
+}
+
+a:hover {
+  color: hsl(206,20%,70%);
 }
 
 .desc {
@@ -91,7 +107,7 @@ font-variant: small-caps;
 .marketlinkbox {
 
   height: 130px;
-  border: 2px solid purple;
+  border: 2px solid hsl(196,50%,30%);
   font-size: 42px;
   padding-left: .25em;
 }
