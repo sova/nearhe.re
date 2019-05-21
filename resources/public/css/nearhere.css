@@ -1,7 +1,7 @@
 
 
 body {
-  background-color: hsl(196,50%,70%);
+  background-color: hsl(136,50%,70%);
 }
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Vollkorn&display=swap');
 * {
@@ -10,7 +10,7 @@ font-family: 'Vollkorn', serif;
 #navbox {
   width: 200px;
   height: 200px;
-  border: 10px solid hsl(196,50%,30%);
+  border: 10px solid hsl(256,50%,30%);
   background-color: #fff;
   float: left;
   clear: none;
@@ -50,14 +50,13 @@ font-family: 'Vollkorn', serif;
   float: right;
   clear: none;
   height: 45px;
-  max-width: 588px;/*1000px-200px*/
 
- /* position: absolute;
+  position: absolute;
   display: block;
   top: 0;
   right: 0;
   max-width: 598px;
-  height: 45px;*/
+  height: 45px;
   padding-bottom: 45px;
 background-color: #fff;
 
@@ -68,14 +67,17 @@ font-variant: small-caps;
 
 
 .topnavbtn {
+
   float: right;
   clear: none;
+  display: block;
   font-size: 24px;
   background-color: #fff;
   border: 1px solid hsl(196,50%,30%);
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
+
 }
 
 
@@ -110,6 +112,7 @@ a:hover {
   border: 2px solid hsl(196,50%,30%);
   font-size: 42px;
   padding-left: .25em;
+  display:block;
 }
 
 .marketlinkbox:hover {
@@ -129,5 +132,56 @@ a:hover {
   width: 100%;
   height: 2.5rem;            /* footer height */
   color: #777;
+}
+
+
+.nrhrtag {
+  font-size:48px;
+  line-height:35px;
+  color:hsl(246,80%,30%);
+  float:right;
+  clear:none;
+}
+
+@media (max-width: 1000px) {
+  #bigbox {
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left:0;
+    width: auto;
+
+  }
+
+  #navbox {
+    display: inline-block;
+    min-width: 100%;
+    top: 0;
+    left: 0;  }
+
+  .marketlinkbox {
+    font-size: 18px;
+    width: 140px;
+    height: 100px;
+  }
+
+  .nrhrtag {
+      display:block;
+    position: absolute;
+  }
+
+  #topnav
+  {  min-width: 488px;/*1000px-200px*/
+      position: relative;
+  }
+}
+
+
+#subtn {
+  background-color: #999;
+}
+
+.in {
+  border: 1px solid purple;
 }
 
